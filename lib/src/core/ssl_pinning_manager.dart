@@ -24,9 +24,9 @@ class CertificatePin {
     this.sha256Fingerprints = const [],
     this.trustedCertBytes,
   }) : assert(
-         sha256Fingerprints.isNotEmpty || trustedCertBytes != null,
-         'Provide at least one SHA-256 fingerprint or raw certificate bytes.',
-       );
+          sha256Fingerprints.isNotEmpty || trustedCertBytes != null,
+          'Provide at least one SHA-256 fingerprint or raw certificate bytes.',
+        );
 
   /// The hostname to pin (e.g. `api.example.com`).
   final String host;

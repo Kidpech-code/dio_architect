@@ -53,10 +53,10 @@ class TokenResponse {
   final int expiresIn; // seconds
 
   factory TokenResponse.fromJson(Map<String, dynamic> json) => TokenResponse(
-    token: json['token'] as String,
-    userId: json['user_id'] as String,
-    expiresIn: (json['expires_in'] as num?)?.toInt() ?? 259200,
-  );
+        token: json['token'] as String,
+        userId: json['user_id'] as String,
+        expiresIn: (json['expires_in'] as num?)?.toInt() ?? 259200,
+      );
 
   @override
   String toString() =>
@@ -91,22 +91,22 @@ class Product {
   final String? createdAt;
 
   factory Product.fromJson(Map<String, dynamic> json) => Product(
-    id: json['id'] as String,
-    name: json['name'] as String,
-    price: (json['price'] as num).toDouble(),
-    description: json['description'] as String?,
-    category: json['category'] as String?,
-    stock: (json['stock'] as num?)?.toInt() ?? 0,
-    createdAt: json['created_at'] as String?,
-  );
+        id: json['id'] as String,
+        name: json['name'] as String,
+        price: (json['price'] as num).toDouble(),
+        description: json['description'] as String?,
+        category: json['category'] as String?,
+        stock: (json['stock'] as num?)?.toInt() ?? 0,
+        createdAt: json['created_at'] as String?,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'price': price,
-    if (description != null) 'description': description,
-    if (category != null) 'category': category,
-    'stock': stock,
-  };
+        'name': name,
+        'price': price,
+        if (description != null) 'description': description,
+        if (category != null) 'category': category,
+        'stock': stock,
+      };
 
   @override
   String toString() =>
@@ -136,10 +136,10 @@ class CursorMeta {
   final String? nextCursor;
 
   factory CursorMeta.fromJson(Map<String, dynamic> json) => CursorMeta(
-    count: (json['count'] as num?)?.toInt() ?? 0,
-    hasMore: json['has_more'] as bool? ?? false,
-    nextCursor: json['next_cursor'] as String?,
-  );
+        count: (json['count'] as num?)?.toInt() ?? 0,
+        hasMore: json['has_more'] as bool? ?? false,
+        nextCursor: json['next_cursor'] as String?,
+      );
 
   @override
   String toString() =>
@@ -156,12 +156,13 @@ class CursorPage<T> {
   factory CursorPage.fromJson(
     Map<String, dynamic> json,
     T Function(Map<String, dynamic>) fromJsonT,
-  ) => CursorPage(
-    data: (json['data'] as List)
-        .map((e) => fromJsonT(e as Map<String, dynamic>))
-        .toList(),
-    meta: CursorMeta.fromJson(json['meta'] as Map<String, dynamic>),
-  );
+  ) =>
+      CursorPage(
+        data: (json['data'] as List)
+            .map((e) => fromJsonT(e as Map<String, dynamic>))
+            .toList(),
+        meta: CursorMeta.fromJson(json['meta'] as Map<String, dynamic>),
+      );
 }
 
 // ──────────────────────────────────────────────────────────────

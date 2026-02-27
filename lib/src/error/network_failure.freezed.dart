@@ -28,9 +28,9 @@ mixin _$NetworkFailure {
       String? message,
       Object? error,
       StackTrace? stackTrace,
-    )
-    unknown,
-  }) => throw _privateConstructorUsedError;
+    ) unknown,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noConnection,
@@ -39,8 +39,9 @@ mixin _$NetworkFailure {
     TResult? Function(String message)? badRequest,
     TResult? Function(int statusCode, String? message)? serverError,
     TResult? Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
-  }) => throw _privateConstructorUsedError;
+        unknown,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noConnection,
@@ -49,9 +50,10 @@ mixin _$NetworkFailure {
     TResult Function(String message)? badRequest,
     TResult Function(int statusCode, String? message)? serverError,
     TResult Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(NoConnection value) noConnection,
@@ -60,7 +62,8 @@ mixin _$NetworkFailure {
     required TResult Function(_BadRequest value) badRequest,
     required TResult Function(_ServerError value) serverError,
     required TResult Function(_Unknown value) unknown,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoConnection value)? noConnection,
@@ -69,7 +72,8 @@ mixin _$NetworkFailure {
     TResult? Function(_BadRequest value)? badRequest,
     TResult? Function(_ServerError value)? serverError,
     TResult? Function(_Unknown value)? unknown,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoConnection value)? noConnection,
@@ -79,7 +83,8 @@ mixin _$NetworkFailure {
     TResult Function(_ServerError value)? serverError,
     TResult Function(_Unknown value)? unknown,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -156,8 +161,7 @@ class _$NoConnectionImpl implements NoConnection {
       String? message,
       Object? error,
       StackTrace? stackTrace,
-    )
-    unknown,
+    ) unknown,
   }) {
     return noConnection();
   }
@@ -171,7 +175,7 @@ class _$NoConnectionImpl implements NoConnection {
     TResult? Function(String message)? badRequest,
     TResult? Function(int statusCode, String? message)? serverError,
     TResult? Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
   }) {
     return noConnection?.call();
   }
@@ -185,7 +189,7 @@ class _$NoConnectionImpl implements NoConnection {
     TResult Function(String message)? badRequest,
     TResult Function(int statusCode, String? message)? serverError,
     TResult Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
     required TResult orElse(),
   }) {
     if (noConnection != null) {
@@ -294,8 +298,7 @@ class _$TimeoutImpl implements _Timeout {
       String? message,
       Object? error,
       StackTrace? stackTrace,
-    )
-    unknown,
+    ) unknown,
   }) {
     return timeout();
   }
@@ -309,7 +312,7 @@ class _$TimeoutImpl implements _Timeout {
     TResult? Function(String message)? badRequest,
     TResult? Function(int statusCode, String? message)? serverError,
     TResult? Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
   }) {
     return timeout?.call();
   }
@@ -323,7 +326,7 @@ class _$TimeoutImpl implements _Timeout {
     TResult Function(String message)? badRequest,
     TResult Function(int statusCode, String? message)? serverError,
     TResult Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
     required TResult orElse(),
   }) {
     if (timeout != null) {
@@ -409,7 +412,7 @@ class __$$UnauthorizedImplCopyWithImpl<$Res>
         message: freezed == message
             ? _value.message
             : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
+                as String?,
       ),
     );
   }
@@ -459,8 +462,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
       String? message,
       Object? error,
       StackTrace? stackTrace,
-    )
-    unknown,
+    ) unknown,
   }) {
     return unauthorized(message);
   }
@@ -474,7 +476,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
     TResult? Function(String message)? badRequest,
     TResult? Function(int statusCode, String? message)? serverError,
     TResult? Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
   }) {
     return unauthorized?.call(message);
   }
@@ -488,7 +490,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
     TResult Function(String message)? badRequest,
     TResult Function(int statusCode, String? message)? serverError,
     TResult Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
     required TResult orElse(),
   }) {
     if (unauthorized != null) {
@@ -582,7 +584,7 @@ class __$$BadRequestImplCopyWithImpl<$Res>
         message: null == message
             ? _value.message
             : message // ignore: cast_nullable_to_non_nullable
-                  as String,
+                as String,
       ),
     );
   }
@@ -632,8 +634,7 @@ class _$BadRequestImpl implements _BadRequest {
       String? message,
       Object? error,
       StackTrace? stackTrace,
-    )
-    unknown,
+    ) unknown,
   }) {
     return badRequest(message);
   }
@@ -647,7 +648,7 @@ class _$BadRequestImpl implements _BadRequest {
     TResult? Function(String message)? badRequest,
     TResult? Function(int statusCode, String? message)? serverError,
     TResult? Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
   }) {
     return badRequest?.call(message);
   }
@@ -661,7 +662,7 @@ class _$BadRequestImpl implements _BadRequest {
     TResult Function(String message)? badRequest,
     TResult Function(int statusCode, String? message)? serverError,
     TResult Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
     required TResult orElse(),
   }) {
     if (badRequest != null) {
@@ -755,11 +756,11 @@ class __$$ServerErrorImplCopyWithImpl<$Res>
         statusCode: null == statusCode
             ? _value.statusCode
             : statusCode // ignore: cast_nullable_to_non_nullable
-                  as int,
+                as int,
         message: freezed == message
             ? _value.message
             : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
+                as String?,
       ),
     );
   }
@@ -813,8 +814,7 @@ class _$ServerErrorImpl implements _ServerError {
       String? message,
       Object? error,
       StackTrace? stackTrace,
-    )
-    unknown,
+    ) unknown,
   }) {
     return serverError(statusCode, message);
   }
@@ -828,7 +828,7 @@ class _$ServerErrorImpl implements _ServerError {
     TResult? Function(String message)? badRequest,
     TResult? Function(int statusCode, String? message)? serverError,
     TResult? Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
   }) {
     return serverError?.call(statusCode, message);
   }
@@ -842,7 +842,7 @@ class _$ServerErrorImpl implements _ServerError {
     TResult Function(String message)? badRequest,
     TResult Function(int statusCode, String? message)? serverError,
     TResult Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
     required TResult orElse(),
   }) {
     if (serverError != null) {
@@ -944,12 +944,12 @@ class __$$UnknownImplCopyWithImpl<$Res>
         message: freezed == message
             ? _value.message
             : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
+                as String?,
         error: freezed == error ? _value.error : error,
         stackTrace: freezed == stackTrace
             ? _value.stackTrace
             : stackTrace // ignore: cast_nullable_to_non_nullable
-                  as StackTrace?,
+                as StackTrace?,
       ),
     );
   }
@@ -985,11 +985,11 @@ class _$UnknownImpl implements _Unknown {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    message,
-    const DeepCollectionEquality().hash(error),
-    stackTrace,
-  );
+        runtimeType,
+        message,
+        const DeepCollectionEquality().hash(error),
+        stackTrace,
+      );
 
   /// Create a copy of NetworkFailure
   /// with the given fields replaced by the non-null parameter values.
@@ -1011,8 +1011,7 @@ class _$UnknownImpl implements _Unknown {
       String? message,
       Object? error,
       StackTrace? stackTrace,
-    )
-    unknown,
+    ) unknown,
   }) {
     return unknown(message, error, stackTrace);
   }
@@ -1026,7 +1025,7 @@ class _$UnknownImpl implements _Unknown {
     TResult? Function(String message)? badRequest,
     TResult? Function(int statusCode, String? message)? serverError,
     TResult? Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
   }) {
     return unknown?.call(message, error, stackTrace);
   }
@@ -1040,7 +1039,7 @@ class _$UnknownImpl implements _Unknown {
     TResult Function(String message)? badRequest,
     TResult Function(int statusCode, String? message)? serverError,
     TResult Function(String? message, Object? error, StackTrace? stackTrace)?
-    unknown,
+        unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {

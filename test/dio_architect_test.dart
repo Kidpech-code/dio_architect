@@ -49,16 +49,14 @@ void main() {
 
   group('NetworkClientBuilder', () {
     test('builds a NetworkClient', () {
-      final client = NetworkClientBuilder()
-          .baseUrl('https://api.example.com/')
-          .build();
+      final client =
+          NetworkClientBuilder().baseUrl('https://api.example.com/').build();
       expect(client, isA<NetworkClient>());
     });
 
     test('sets baseUrl correctly', () {
-      final client = NetworkClientBuilder()
-          .baseUrl('https://api.example.com/')
-          .build();
+      final client =
+          NetworkClientBuilder().baseUrl('https://api.example.com/').build();
       expect(client.rawDio.options.baseUrl, equals('https://api.example.com/'));
     });
 
@@ -73,9 +71,8 @@ void main() {
     });
 
     test('uses IsolateTransformer by default', () {
-      final client = NetworkClientBuilder()
-          .baseUrl('https://api.example.com/')
-          .build();
+      final client =
+          NetworkClientBuilder().baseUrl('https://api.example.com/').build();
       expect(client.rawDio.transformer, isA<IsolateTransformer>());
     });
 
@@ -115,8 +112,7 @@ void main() {
     test('merges custom default headers', () {
       final client = NetworkClientBuilder()
           .baseUrl('https://api.example.com/')
-          .defaultHeaders({'X-App-Version': '2.0.0'})
-          .build();
+          .defaultHeaders({'X-App-Version': '2.0.0'}).build();
       expect(client.rawDio.options.headers['X-App-Version'], equals('2.0.0'));
       expect(
         client.rawDio.options.headers['Accept'],

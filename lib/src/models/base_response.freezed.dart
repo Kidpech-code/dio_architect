@@ -79,28 +79,27 @@ class _$PaginationMetaCopyWithImpl<$Res, $Val extends PaginationMeta>
   }) {
     return _then(
       _value.copyWith(
-            currentPage: freezed == currentPage
-                ? _value.currentPage
-                : currentPage // ignore: cast_nullable_to_non_nullable
-                      as int?,
-            lastPage: freezed == lastPage
-                ? _value.lastPage
-                : lastPage // ignore: cast_nullable_to_non_nullable
-                      as int?,
-            perPage: freezed == perPage
-                ? _value.perPage
-                : perPage // ignore: cast_nullable_to_non_nullable
-                      as int?,
-            total: freezed == total
-                ? _value.total
-                : total // ignore: cast_nullable_to_non_nullable
-                      as int?,
-            path: freezed == path
-                ? _value.path
-                : path // ignore: cast_nullable_to_non_nullable
-                      as String?,
-          )
-          as $Val,
+        currentPage: freezed == currentPage
+            ? _value.currentPage
+            : currentPage // ignore: cast_nullable_to_non_nullable
+                as int?,
+        lastPage: freezed == lastPage
+            ? _value.lastPage
+            : lastPage // ignore: cast_nullable_to_non_nullable
+                as int?,
+        perPage: freezed == perPage
+            ? _value.perPage
+            : perPage // ignore: cast_nullable_to_non_nullable
+                as int?,
+        total: freezed == total
+            ? _value.total
+            : total // ignore: cast_nullable_to_non_nullable
+                as int?,
+        path: freezed == path
+            ? _value.path
+            : path // ignore: cast_nullable_to_non_nullable
+                as String?,
+      ) as $Val,
     );
   }
 }
@@ -148,23 +147,23 @@ class __$$PaginationMetaImplCopyWithImpl<$Res>
         currentPage: freezed == currentPage
             ? _value.currentPage
             : currentPage // ignore: cast_nullable_to_non_nullable
-                  as int?,
+                as int?,
         lastPage: freezed == lastPage
             ? _value.lastPage
             : lastPage // ignore: cast_nullable_to_non_nullable
-                  as int?,
+                as int?,
         perPage: freezed == perPage
             ? _value.perPage
             : perPage // ignore: cast_nullable_to_non_nullable
-                  as int?,
+                as int?,
         total: freezed == total
             ? _value.total
             : total // ignore: cast_nullable_to_non_nullable
-                  as int?,
+                as int?,
         path: freezed == path
             ? _value.path
             : path // ignore: cast_nullable_to_non_nullable
-                  as String?,
+                as String?,
       ),
     );
   }
@@ -338,24 +337,23 @@ class _$BaseResponseCopyWithImpl<T, $Res, $Val extends BaseResponse<T>>
   }) {
     return _then(
       _value.copyWith(
-            data: freezed == data
-                ? _value.data
-                : data // ignore: cast_nullable_to_non_nullable
-                      as T,
-            message: freezed == message
-                ? _value.message
-                : message // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            meta: freezed == meta
-                ? _value.meta
-                : meta // ignore: cast_nullable_to_non_nullable
-                      as PaginationMeta?,
-            statusCode: freezed == statusCode
-                ? _value.statusCode
-                : statusCode // ignore: cast_nullable_to_non_nullable
-                      as int?,
-          )
-          as $Val,
+        data: freezed == data
+            ? _value.data
+            : data // ignore: cast_nullable_to_non_nullable
+                as T,
+        message: freezed == message
+            ? _value.message
+            : message // ignore: cast_nullable_to_non_nullable
+                as String?,
+        meta: freezed == meta
+            ? _value.meta
+            : meta // ignore: cast_nullable_to_non_nullable
+                as PaginationMeta?,
+        statusCode: freezed == statusCode
+            ? _value.statusCode
+            : statusCode // ignore: cast_nullable_to_non_nullable
+                as int?,
+      ) as $Val,
     );
   }
 
@@ -418,19 +416,19 @@ class __$$BaseResponseImplCopyWithImpl<T, $Res>
         data: freezed == data
             ? _value.data
             : data // ignore: cast_nullable_to_non_nullable
-                  as T,
+                as T,
         message: freezed == message
             ? _value.message
             : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
+                as String?,
         meta: freezed == meta
             ? _value.meta
             : meta // ignore: cast_nullable_to_non_nullable
-                  as PaginationMeta?,
+                as PaginationMeta?,
         statusCode: freezed == statusCode
             ? _value.statusCode
             : statusCode // ignore: cast_nullable_to_non_nullable
-                  as int?,
+                as int?,
       ),
     );
   }
@@ -449,7 +447,8 @@ class _$BaseResponseImpl<T> implements _BaseResponse<T> {
   factory _$BaseResponseImpl.fromJson(
     Map<String, dynamic> json,
     T Function(Object?) fromJsonT,
-  ) => _$$BaseResponseImplFromJson(json, fromJsonT);
+  ) =>
+      _$$BaseResponseImplFromJson(json, fromJsonT);
 
   @override
   final T data;
@@ -481,12 +480,12 @@ class _$BaseResponseImpl<T> implements _BaseResponse<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(data),
-    message,
-    meta,
-    statusCode,
-  );
+        runtimeType,
+        const DeepCollectionEquality().hash(data),
+        message,
+        meta,
+        statusCode,
+      );
 
   /// Create a copy of BaseResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -601,24 +600,23 @@ class _$BaseListResponseCopyWithImpl<T, $Res, $Val extends BaseListResponse<T>>
   }) {
     return _then(
       _value.copyWith(
-            data: null == data
-                ? _value.data
-                : data // ignore: cast_nullable_to_non_nullable
-                      as List<T>,
-            message: freezed == message
-                ? _value.message
-                : message // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            meta: freezed == meta
-                ? _value.meta
-                : meta // ignore: cast_nullable_to_non_nullable
-                      as PaginationMeta?,
-            statusCode: freezed == statusCode
-                ? _value.statusCode
-                : statusCode // ignore: cast_nullable_to_non_nullable
-                      as int?,
-          )
-          as $Val,
+        data: null == data
+            ? _value.data
+            : data // ignore: cast_nullable_to_non_nullable
+                as List<T>,
+        message: freezed == message
+            ? _value.message
+            : message // ignore: cast_nullable_to_non_nullable
+                as String?,
+        meta: freezed == meta
+            ? _value.meta
+            : meta // ignore: cast_nullable_to_non_nullable
+                as PaginationMeta?,
+        statusCode: freezed == statusCode
+            ? _value.statusCode
+            : statusCode // ignore: cast_nullable_to_non_nullable
+                as int?,
+      ) as $Val,
     );
   }
 
@@ -681,19 +679,19 @@ class __$$BaseListResponseImplCopyWithImpl<T, $Res>
         data: null == data
             ? _value._data
             : data // ignore: cast_nullable_to_non_nullable
-                  as List<T>,
+                as List<T>,
         message: freezed == message
             ? _value.message
             : message // ignore: cast_nullable_to_non_nullable
-                  as String?,
+                as String?,
         meta: freezed == meta
             ? _value.meta
             : meta // ignore: cast_nullable_to_non_nullable
-                  as PaginationMeta?,
+                as PaginationMeta?,
         statusCode: freezed == statusCode
             ? _value.statusCode
             : statusCode // ignore: cast_nullable_to_non_nullable
-                  as int?,
+                as int?,
       ),
     );
   }
@@ -712,7 +710,8 @@ class _$BaseListResponseImpl<T> implements _BaseListResponse<T> {
   factory _$BaseListResponseImpl.fromJson(
     Map<String, dynamic> json,
     T Function(Object?) fromJsonT,
-  ) => _$$BaseListResponseImplFromJson(json, fromJsonT);
+  ) =>
+      _$$BaseListResponseImplFromJson(json, fromJsonT);
 
   final List<T> _data;
   @override
@@ -750,12 +749,12 @@ class _$BaseListResponseImpl<T> implements _BaseListResponse<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_data),
-    message,
-    meta,
-    statusCode,
-  );
+        runtimeType,
+        const DeepCollectionEquality().hash(_data),
+        message,
+        meta,
+        statusCode,
+      );
 
   /// Create a copy of BaseListResponse
   /// with the given fields replaced by the non-null parameter values.

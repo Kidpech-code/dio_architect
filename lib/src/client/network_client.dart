@@ -10,8 +10,8 @@ import '../error/network_failure.dart';
 
 /// Opt a single request out of auth-header injection.
 Options skipAuth([Options? options]) => (options ?? Options()).copyWith(
-  extra: {...?options?.extra, 'skipAuth': true},
-);
+      extra: {...?options?.extra, 'skipAuth': true},
+    );
 
 // ─── NetworkClient ────────────────────────────────────────────────────────────
 
@@ -59,16 +59,17 @@ class NetworkClient {
     Options? options,
     CancelToken? cancelToken,
     ProgressCallback? onReceiveProgress,
-  }) => _execute<T>(
-    () => _dio.get<dynamic>(
-      path,
-      queryParameters: queryParameters,
-      options: options,
-      cancelToken: cancelToken,
-      onReceiveProgress: onReceiveProgress,
-    ),
-    decoder: decoder,
-  );
+  }) =>
+      _execute<T>(
+        () => _dio.get<dynamic>(
+          path,
+          queryParameters: queryParameters,
+          options: options,
+          cancelToken: cancelToken,
+          onReceiveProgress: onReceiveProgress,
+        ),
+        decoder: decoder,
+      );
 
   // ─── POST ─────────────────────────────────────────────────────────────────
 
@@ -81,18 +82,19 @@ class NetworkClient {
     CancelToken? cancelToken,
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
-  }) => _execute<T>(
-    () => _dio.post<dynamic>(
-      path,
-      data: data,
-      queryParameters: queryParameters,
-      options: options,
-      cancelToken: cancelToken,
-      onSendProgress: onSendProgress,
-      onReceiveProgress: onReceiveProgress,
-    ),
-    decoder: decoder,
-  );
+  }) =>
+      _execute<T>(
+        () => _dio.post<dynamic>(
+          path,
+          data: data,
+          queryParameters: queryParameters,
+          options: options,
+          cancelToken: cancelToken,
+          onSendProgress: onSendProgress,
+          onReceiveProgress: onReceiveProgress,
+        ),
+        decoder: decoder,
+      );
 
   // ─── PUT ──────────────────────────────────────────────────────────────────
 
@@ -105,18 +107,19 @@ class NetworkClient {
     CancelToken? cancelToken,
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
-  }) => _execute<T>(
-    () => _dio.put<dynamic>(
-      path,
-      data: data,
-      queryParameters: queryParameters,
-      options: options,
-      cancelToken: cancelToken,
-      onSendProgress: onSendProgress,
-      onReceiveProgress: onReceiveProgress,
-    ),
-    decoder: decoder,
-  );
+  }) =>
+      _execute<T>(
+        () => _dio.put<dynamic>(
+          path,
+          data: data,
+          queryParameters: queryParameters,
+          options: options,
+          cancelToken: cancelToken,
+          onSendProgress: onSendProgress,
+          onReceiveProgress: onReceiveProgress,
+        ),
+        decoder: decoder,
+      );
 
   // ─── PATCH ────────────────────────────────────────────────────────────────
 
@@ -129,18 +132,19 @@ class NetworkClient {
     CancelToken? cancelToken,
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
-  }) => _execute<T>(
-    () => _dio.patch<dynamic>(
-      path,
-      data: data,
-      queryParameters: queryParameters,
-      options: options,
-      cancelToken: cancelToken,
-      onSendProgress: onSendProgress,
-      onReceiveProgress: onReceiveProgress,
-    ),
-    decoder: decoder,
-  );
+  }) =>
+      _execute<T>(
+        () => _dio.patch<dynamic>(
+          path,
+          data: data,
+          queryParameters: queryParameters,
+          options: options,
+          cancelToken: cancelToken,
+          onSendProgress: onSendProgress,
+          onReceiveProgress: onReceiveProgress,
+        ),
+        decoder: decoder,
+      );
 
   // ─── DELETE ───────────────────────────────────────────────────────────────
 
@@ -151,16 +155,17 @@ class NetworkClient {
     Map<String, dynamic>? queryParameters,
     Options? options,
     CancelToken? cancelToken,
-  }) => _execute<T>(
-    () => _dio.delete<dynamic>(
-      path,
-      data: data,
-      queryParameters: queryParameters,
-      options: options,
-      cancelToken: cancelToken,
-    ),
-    decoder: decoder,
-  );
+  }) =>
+      _execute<T>(
+        () => _dio.delete<dynamic>(
+          path,
+          data: data,
+          queryParameters: queryParameters,
+          options: options,
+          cancelToken: cancelToken,
+        ),
+        decoder: decoder,
+      );
 
   // ─── DELETE (no response body) ────────────────────────────────────────────
 
@@ -170,16 +175,17 @@ class NetworkClient {
     Map<String, dynamic>? queryParameters,
     Options? options,
     CancelToken? cancelToken,
-  }) => _execute<Unit>(
-    () => _dio.delete<dynamic>(
-      path,
-      data: data,
-      queryParameters: queryParameters,
-      options: options,
-      cancelToken: cancelToken,
-    ),
-    decoder: (_) => unit,
-  );
+  }) =>
+      _execute<Unit>(
+        () => _dio.delete<dynamic>(
+          path,
+          data: data,
+          queryParameters: queryParameters,
+          options: options,
+          cancelToken: cancelToken,
+        ),
+        decoder: (_) => unit,
+      );
 
   // ─── MULTIPART / FORM-DATA ────────────────────────────────────────────────
 
@@ -211,18 +217,19 @@ class NetworkClient {
     CancelToken? cancelToken,
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
-  }) => _execute<T>(
-    () => _dio.request<dynamic>(
-      path,
-      data: formData,
-      queryParameters: queryParameters,
-      options: Options(method: method, contentType: 'multipart/form-data'),
-      cancelToken: cancelToken,
-      onSendProgress: onSendProgress,
-      onReceiveProgress: onReceiveProgress,
-    ),
-    decoder: decoder,
-  );
+  }) =>
+      _execute<T>(
+        () => _dio.request<dynamic>(
+          path,
+          data: formData,
+          queryParameters: queryParameters,
+          options: Options(method: method, contentType: 'multipart/form-data'),
+          cancelToken: cancelToken,
+          onSendProgress: onSendProgress,
+          onReceiveProgress: onReceiveProgress,
+        ),
+        decoder: decoder,
+      );
 
   // ─── Core execute wrapper ─────────────────────────────────────────────────
 
@@ -273,13 +280,13 @@ class NetworkClient {
         400 => NetworkFailure.badRequest(message: message ?? 'Bad request'),
         401 => NetworkFailure.unauthorized(message: message),
         >= 500 => NetworkFailure.serverError(
-          statusCode: statusCode,
-          message: message,
-        ),
+            statusCode: statusCode,
+            message: message,
+          ),
         _ => NetworkFailure.serverError(
-          statusCode: statusCode,
-          message: message ?? 'HTTP $statusCode',
-        ),
+            statusCode: statusCode,
+            message: message ?? 'HTTP $statusCode',
+          ),
       };
     }
 

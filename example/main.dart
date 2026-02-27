@@ -35,10 +35,10 @@ class UserProfile {
   });
 
   factory UserProfile.fromJson(Map<String, dynamic> json) => UserProfile(
-    id: json['id'] as String? ?? '',
-    username: json['username'] as String? ?? '',
-    email: json['email'] as String? ?? '',
-  );
+        id: json['id'] as String? ?? '',
+        username: json['username'] as String? ?? '',
+        email: json['email'] as String? ?? '',
+      );
 
   @override
   String toString() => 'UserProfile(id: $id, username: $username)';
@@ -84,11 +84,11 @@ class Product {
   });
 
   factory Product.fromJson(Map<String, dynamic> json) => Product(
-    id: json['id'] as String,
-    name: json['name'] as String,
-    price: json['price'] as num,
-    description: json['description'] as String?,
-  );
+        id: json['id'] as String,
+        name: json['name'] as String,
+        price: json['price'] as num,
+        description: json['description'] as String?,
+      );
 
   @override
   String toString() => 'Product(id: $id, name: $name, price: $price)';
@@ -230,10 +230,8 @@ class ProductRepository {
     return result.flatMap((envelope) {
       try {
         final rawList = envelope['data'] as List;
-        final items = rawList
-            .cast<Map<String, dynamic>>()
-            .map(Product.fromJson)
-            .toList();
+        final items =
+            rawList.cast<Map<String, dynamic>>().map(Product.fromJson).toList();
         final meta = envelope['meta'] as Map?;
         final hasMore = (meta?['has_more'] as bool?) ?? false;
         final nextCursor = hasMore ? (meta?['next_cursor'] as String?) : null;
@@ -264,9 +262,9 @@ class HomeController {
     required AuthRepository auth,
     required ProductRepository products,
     required TokenStorageManager storage,
-  }) : _auth = auth,
-       _products = products,
-       _storage = storage;
+  })  : _auth = auth,
+        _products = products,
+        _storage = storage;
 
   // ── State ─────────────────────────────────────────────────────────────────
 

@@ -47,7 +47,8 @@ class BaseResponse<T> with _$BaseResponse<T> {
   factory BaseResponse.fromJson(
     Map<String, dynamic> json,
     T Function(Object? json) fromJsonT,
-  ) => _$BaseResponseFromJson(json, fromJsonT);
+  ) =>
+      _$BaseResponseFromJson(json, fromJsonT);
 }
 
 // ─── List Envelope ────────────────────────────────────────────────────────────
@@ -68,5 +69,6 @@ class BaseListResponse<T> with _$BaseListResponse<T> {
   factory BaseListResponse.fromJson(
     Map<String, dynamic> json,
     T Function(Object? json) fromJsonT,
-  ) => _$BaseListResponseFromJson(json, fromJsonT);
+  ) =>
+      _$BaseListResponseFromJson(json, fromJsonT);
 }

@@ -87,8 +87,8 @@ class RetryConfig {
 /// ```
 class RetryInterceptor extends Interceptor {
   RetryInterceptor({required Dio dio, RetryConfig? config})
-    : _dio = dio,
-      _config = config ?? const RetryConfig();
+      : _dio = dio,
+        _config = config ?? const RetryConfig();
 
   final Dio _dio;
   final RetryConfig _config;
@@ -161,8 +161,7 @@ class RetryInterceptor extends Interceptor {
     final statusCode = err.response?.statusCode;
 
     if (statusCode == 429 && _config.respectRetryAfterHeader) {
-      final retryAfterValue =
-          err.response?.headers.value('Retry-After') ??
+      final retryAfterValue = err.response?.headers.value('Retry-After') ??
           err.response?.headers.value('retry-after');
 
       if (retryAfterValue != null) {
@@ -188,20 +187,17 @@ class RetryInterceptor extends Interceptor {
   /// delay  = clamp(base + jitter, 0, maxDelay)
   /// ```
   Duration _calculateBackoffDelay(int attempt) {
-    final base =
-        _config.initialDelay.inMilliseconds *
+    final base = _config.initialDelay.inMilliseconds *
         math.pow(_config.backoffMultiplier, attempt);
-    final cappedBase = base
-        .clamp(0, _config.maxDelay.inMilliseconds)
-        .toDouble();
+    final cappedBase =
+        base.clamp(0, _config.maxDelay.inMilliseconds).toDouble();
 
     final jitter = _config.jitterFactor > 0
         ? (_random.nextDouble() * 2 - 1) * _config.jitterFactor * cappedBase
         : 0.0;
 
-    final ms = (cappedBase + jitter)
-        .clamp(0, _config.maxDelay.inMilliseconds)
-        .round();
+    final ms =
+        (cappedBase + jitter).clamp(0, _config.maxDelay.inMilliseconds).round();
 
     return Duration(milliseconds: ms);
   }

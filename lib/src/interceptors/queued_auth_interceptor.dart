@@ -76,9 +76,9 @@ class QueuedAuthInterceptor extends Interceptor {
     this.tokenHeaderName = 'Authorization',
     this.tokenPrefix = 'Bearer',
     this.onRefreshFailed,
-  }) : _storage = storage,
-       _refreshDelegate = refreshDelegate,
-       _dio = dio;
+  })  : _storage = storage,
+        _refreshDelegate = refreshDelegate,
+        _dio = dio;
 
   final TokenStorageManager _storage;
   final TokenRefreshDelegate _refreshDelegate;
