@@ -1,6 +1,6 @@
 name: dio_architect
 description: "Enterprise-grade, highly customizable, zero-jank, and ultra-resilient Flutter HTTP package wrapping dio."
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/Kidpech-code/dio_architect
 repository: https://github.com/Kidpech-code/dio_architect
 issue_tracker: https://github.com/Kidpech-code/dio_architect/issues
@@ -26,7 +26,7 @@ dependencies:
   fpdart: ^1.1.0
 
   # Code generation for sealed unions and JSON
-  freezed_annotation: ^2.4.1
+  freezed_annotation: ^3.1.0
   json_annotation: ^4.9.0
 
   # HTTP/2 adapter (opt-in via builder)
@@ -42,7 +42,7 @@ dev_dependencies:
 
   # Code generation
   build_runner: ^2.4.12
-  freezed: ^2.5.7
+  freezed: ^3.2.5
   json_serializable: ^6.8.0
 
 # For information on the generic Dart part of this file, see the

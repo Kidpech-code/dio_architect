@@ -1,3 +1,10 @@
+## 0.1.1
+
+- Upgraded `freezed_annotation` to `^3.1.0` and `freezed` to `^3.2.5` — resolves pub.dev dependency scoring (0/10 → 10/10).
+- Updated `@freezed` class declarations to use `abstract class` as required by freezed 3.x.
+- Added MIT License file.
+- Fixed SSL pinning SHA-256 computation using the `crypto` package.
+
 ## 0.1.0
 
 - Initial release.

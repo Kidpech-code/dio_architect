@@ -8,7 +8,7 @@ part 'base_response.g.dart';
 // ─── Pagination Meta ─────────────────────────────────────────────────────────
 
 @freezed
-class PaginationMeta with _$PaginationMeta {
+abstract class PaginationMeta with _$PaginationMeta {
   const factory PaginationMeta({
     @JsonKey(name: 'current_page') int? currentPage,
     @JsonKey(name: 'last_page') int? lastPage,
@@ -36,7 +36,7 @@ class PaginationMeta with _$PaginationMeta {
 /// );
 /// ```
 @Freezed(genericArgumentFactories: true)
-class BaseResponse<T> with _$BaseResponse<T> {
+abstract class BaseResponse<T> with _$BaseResponse<T> {
   const factory BaseResponse({
     required T data,
     String? message,
@@ -58,7 +58,7 @@ class BaseResponse<T> with _$BaseResponse<T> {
 /// { "data": [T, T, ...], "meta": { "total": 100, ... } }
 /// ```
 @Freezed(genericArgumentFactories: true)
-class BaseListResponse<T> with _$BaseListResponse<T> {
+abstract class BaseListResponse<T> with _$BaseListResponse<T> {
   const factory BaseListResponse({
     required List<T> data,
     String? message,

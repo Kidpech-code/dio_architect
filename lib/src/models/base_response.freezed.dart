@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,127 +9,77 @@ part of 'base_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
-
-PaginationMeta _$PaginationMetaFromJson(Map<String, dynamic> json) {
-  return _PaginationMeta.fromJson(json);
-}
 
 /// @nodoc
 mixin _$PaginationMeta {
   @JsonKey(name: 'current_page')
-  int? get currentPage => throw _privateConstructorUsedError;
+  int? get currentPage;
   @JsonKey(name: 'last_page')
-  int? get lastPage => throw _privateConstructorUsedError;
+  int? get lastPage;
   @JsonKey(name: 'per_page')
-  int? get perPage => throw _privateConstructorUsedError;
-  int? get total => throw _privateConstructorUsedError;
-  String? get path => throw _privateConstructorUsedError;
-
-  /// Serializes this PaginationMeta to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  int? get perPage;
+  int? get total;
+  String? get path;
 
   /// Create a copy of PaginationMeta
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $PaginationMetaCopyWith<PaginationMeta> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $PaginationMetaCopyWith<$Res> {
-  factory $PaginationMetaCopyWith(
-    PaginationMeta value,
-    $Res Function(PaginationMeta) then,
-  ) = _$PaginationMetaCopyWithImpl<$Res, PaginationMeta>;
-  @useResult
-  $Res call({
-    @JsonKey(name: 'current_page') int? currentPage,
-    @JsonKey(name: 'last_page') int? lastPage,
-    @JsonKey(name: 'per_page') int? perPage,
-    int? total,
-    String? path,
-  });
-}
-
-/// @nodoc
-class _$PaginationMetaCopyWithImpl<$Res, $Val extends PaginationMeta>
-    implements $PaginationMetaCopyWith<$Res> {
-  _$PaginationMetaCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of PaginationMeta
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  $PaginationMetaCopyWith<PaginationMeta> get copyWith =>
+      _$PaginationMetaCopyWithImpl<PaginationMeta>(
+          this as PaginationMeta, _$identity);
+
+  /// Serializes this PaginationMeta to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? currentPage = freezed,
-    Object? lastPage = freezed,
-    Object? perPage = freezed,
-    Object? total = freezed,
-    Object? path = freezed,
-  }) {
-    return _then(
-      _value.copyWith(
-        currentPage: freezed == currentPage
-            ? _value.currentPage
-            : currentPage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        lastPage: freezed == lastPage
-            ? _value.lastPage
-            : lastPage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        perPage: freezed == perPage
-            ? _value.perPage
-            : perPage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        total: freezed == total
-            ? _value.total
-            : total // ignore: cast_nullable_to_non_nullable
-                as int?,
-        path: freezed == path
-            ? _value.path
-            : path // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ) as $Val,
-    );
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is PaginationMeta &&
+            (identical(other.currentPage, currentPage) ||
+                other.currentPage == currentPage) &&
+            (identical(other.lastPage, lastPage) ||
+                other.lastPage == lastPage) &&
+            (identical(other.perPage, perPage) || other.perPage == perPage) &&
+            (identical(other.total, total) || other.total == total) &&
+            (identical(other.path, path) || other.path == path));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, currentPage, lastPage, perPage, total, path);
+
+  @override
+  String toString() {
+    return 'PaginationMeta(currentPage: $currentPage, lastPage: $lastPage, perPage: $perPage, total: $total, path: $path)';
   }
 }
 
 /// @nodoc
-abstract class _$$PaginationMetaImplCopyWith<$Res>
-    implements $PaginationMetaCopyWith<$Res> {
-  factory _$$PaginationMetaImplCopyWith(
-    _$PaginationMetaImpl value,
-    $Res Function(_$PaginationMetaImpl) then,
-  ) = __$$PaginationMetaImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $PaginationMetaCopyWith<$Res> {
+  factory $PaginationMetaCopyWith(
+          PaginationMeta value, $Res Function(PaginationMeta) _then) =
+      _$PaginationMetaCopyWithImpl;
   @useResult
-  $Res call({
-    @JsonKey(name: 'current_page') int? currentPage,
-    @JsonKey(name: 'last_page') int? lastPage,
-    @JsonKey(name: 'per_page') int? perPage,
-    int? total,
-    String? path,
-  });
+  $Res call(
+      {@JsonKey(name: 'current_page') int? currentPage,
+      @JsonKey(name: 'last_page') int? lastPage,
+      @JsonKey(name: 'per_page') int? perPage,
+      int? total,
+      String? path});
 }
 
 /// @nodoc
-class __$$PaginationMetaImplCopyWithImpl<$Res>
-    extends _$PaginationMetaCopyWithImpl<$Res, _$PaginationMetaImpl>
-    implements _$$PaginationMetaImplCopyWith<$Res> {
-  __$$PaginationMetaImplCopyWithImpl(
-    _$PaginationMetaImpl _value,
-    $Res Function(_$PaginationMetaImpl) _then,
-  ) : super(_value, _then);
+class _$PaginationMetaCopyWithImpl<$Res>
+    implements $PaginationMetaCopyWith<$Res> {
+  _$PaginationMetaCopyWithImpl(this._self, this._then);
+
+  final PaginationMeta _self;
+  final $Res Function(PaginationMeta) _then;
 
   /// Create a copy of PaginationMeta
   /// with the given fields replaced by the non-null parameter values.
@@ -142,46 +92,220 @@ class __$$PaginationMetaImplCopyWithImpl<$Res>
     Object? total = freezed,
     Object? path = freezed,
   }) {
-    return _then(
-      _$PaginationMetaImpl(
-        currentPage: freezed == currentPage
-            ? _value.currentPage
-            : currentPage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        lastPage: freezed == lastPage
-            ? _value.lastPage
-            : lastPage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        perPage: freezed == perPage
-            ? _value.perPage
-            : perPage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        total: freezed == total
-            ? _value.total
-            : total // ignore: cast_nullable_to_non_nullable
-                as int?,
-        path: freezed == path
-            ? _value.path
-            : path // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_self.copyWith(
+      currentPage: freezed == currentPage
+          ? _self.currentPage
+          : currentPage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      lastPage: freezed == lastPage
+          ? _self.lastPage
+          : lastPage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      perPage: freezed == perPage
+          ? _self.perPage
+          : perPage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      total: freezed == total
+          ? _self.total
+          : total // ignore: cast_nullable_to_non_nullable
+              as int?,
+      path: freezed == path
+          ? _self.path
+          : path // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [PaginationMeta].
+extension PaginationMetaPatterns on PaginationMeta {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_PaginationMeta value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PaginationMeta() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_PaginationMeta value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PaginationMeta():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_PaginationMeta value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PaginationMeta() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: 'current_page') int? currentPage,
+            @JsonKey(name: 'last_page') int? lastPage,
+            @JsonKey(name: 'per_page') int? perPage,
+            int? total,
+            String? path)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PaginationMeta() when $default != null:
+        return $default(_that.currentPage, _that.lastPage, _that.perPage,
+            _that.total, _that.path);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: 'current_page') int? currentPage,
+            @JsonKey(name: 'last_page') int? lastPage,
+            @JsonKey(name: 'per_page') int? perPage,
+            int? total,
+            String? path)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PaginationMeta():
+        return $default(_that.currentPage, _that.lastPage, _that.perPage,
+            _that.total, _that.path);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: 'current_page') int? currentPage,
+            @JsonKey(name: 'last_page') int? lastPage,
+            @JsonKey(name: 'per_page') int? perPage,
+            int? total,
+            String? path)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PaginationMeta() when $default != null:
+        return $default(_that.currentPage, _that.lastPage, _that.perPage,
+            _that.total, _that.path);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$PaginationMetaImpl implements _PaginationMeta {
-  const _$PaginationMetaImpl({
-    @JsonKey(name: 'current_page') this.currentPage,
-    @JsonKey(name: 'last_page') this.lastPage,
-    @JsonKey(name: 'per_page') this.perPage,
-    this.total,
-    this.path,
-  });
-
-  factory _$PaginationMetaImpl.fromJson(Map<String, dynamic> json) =>
-      _$$PaginationMetaImplFromJson(json);
+class _PaginationMeta implements PaginationMeta {
+  const _PaginationMeta(
+      {@JsonKey(name: 'current_page') this.currentPage,
+      @JsonKey(name: 'last_page') this.lastPage,
+      @JsonKey(name: 'per_page') this.perPage,
+      this.total,
+      this.path});
+  factory _PaginationMeta.fromJson(Map<String, dynamic> json) =>
+      _$PaginationMetaFromJson(json);
 
   @override
   @JsonKey(name: 'current_page')
@@ -197,16 +321,26 @@ class _$PaginationMetaImpl implements _PaginationMeta {
   @override
   final String? path;
 
+  /// Create a copy of PaginationMeta
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'PaginationMeta(currentPage: $currentPage, lastPage: $lastPage, perPage: $perPage, total: $total, path: $path)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$PaginationMetaCopyWith<_PaginationMeta> get copyWith =>
+      __$PaginationMetaCopyWithImpl<_PaginationMeta>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$PaginationMetaToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PaginationMetaImpl &&
+            other is _PaginationMeta &&
             (identical(other.currentPage, currentPage) ||
                 other.currentPage == currentPage) &&
             (identical(other.lastPage, lastPage) ||
@@ -221,109 +355,136 @@ class _$PaginationMetaImpl implements _PaginationMeta {
   int get hashCode =>
       Object.hash(runtimeType, currentPage, lastPage, perPage, total, path);
 
-  /// Create a copy of PaginationMeta
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$PaginationMetaImplCopyWith<_$PaginationMetaImpl> get copyWith =>
-      __$$PaginationMetaImplCopyWithImpl<_$PaginationMetaImpl>(
-        this,
-        _$identity,
-      );
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$PaginationMetaImplToJson(this);
+  String toString() {
+    return 'PaginationMeta(currentPage: $currentPage, lastPage: $lastPage, perPage: $perPage, total: $total, path: $path)';
   }
 }
 
-abstract class _PaginationMeta implements PaginationMeta {
-  const factory _PaginationMeta({
-    @JsonKey(name: 'current_page') final int? currentPage,
-    @JsonKey(name: 'last_page') final int? lastPage,
-    @JsonKey(name: 'per_page') final int? perPage,
-    final int? total,
-    final String? path,
-  }) = _$PaginationMetaImpl;
+/// @nodoc
+abstract mixin class _$PaginationMetaCopyWith<$Res>
+    implements $PaginationMetaCopyWith<$Res> {
+  factory _$PaginationMetaCopyWith(
+          _PaginationMeta value, $Res Function(_PaginationMeta) _then) =
+      __$PaginationMetaCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'current_page') int? currentPage,
+      @JsonKey(name: 'last_page') int? lastPage,
+      @JsonKey(name: 'per_page') int? perPage,
+      int? total,
+      String? path});
+}
 
-  factory _PaginationMeta.fromJson(Map<String, dynamic> json) =
-      _$PaginationMetaImpl.fromJson;
+/// @nodoc
+class __$PaginationMetaCopyWithImpl<$Res>
+    implements _$PaginationMetaCopyWith<$Res> {
+  __$PaginationMetaCopyWithImpl(this._self, this._then);
 
-  @override
-  @JsonKey(name: 'current_page')
-  int? get currentPage;
-  @override
-  @JsonKey(name: 'last_page')
-  int? get lastPage;
-  @override
-  @JsonKey(name: 'per_page')
-  int? get perPage;
-  @override
-  int? get total;
-  @override
-  String? get path;
+  final _PaginationMeta _self;
+  final $Res Function(_PaginationMeta) _then;
 
   /// Create a copy of PaginationMeta
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$PaginationMetaImplCopyWith<_$PaginationMetaImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-BaseResponse<T> _$BaseResponseFromJson<T>(
-  Map<String, dynamic> json,
-  T Function(Object?) fromJsonT,
-) {
-  return _BaseResponse<T>.fromJson(json, fromJsonT);
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? currentPage = freezed,
+    Object? lastPage = freezed,
+    Object? perPage = freezed,
+    Object? total = freezed,
+    Object? path = freezed,
+  }) {
+    return _then(_PaginationMeta(
+      currentPage: freezed == currentPage
+          ? _self.currentPage
+          : currentPage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      lastPage: freezed == lastPage
+          ? _self.lastPage
+          : lastPage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      perPage: freezed == perPage
+          ? _self.perPage
+          : perPage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      total: freezed == total
+          ? _self.total
+          : total // ignore: cast_nullable_to_non_nullable
+              as int?,
+      path: freezed == path
+          ? _self.path
+          : path // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
 }
 
 /// @nodoc
 mixin _$BaseResponse<T> {
-  T get data => throw _privateConstructorUsedError;
-  String? get message => throw _privateConstructorUsedError;
-  PaginationMeta? get meta => throw _privateConstructorUsedError;
+  T get data;
+  String? get message;
+  PaginationMeta? get meta;
   @JsonKey(name: 'status_code')
-  int? get statusCode => throw _privateConstructorUsedError;
-
-  /// Serializes this BaseResponse to a JSON map.
-  Map<String, dynamic> toJson(Object? Function(T) toJsonT) =>
-      throw _privateConstructorUsedError;
+  int? get statusCode;
 
   /// Create a copy of BaseResponse
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $BaseResponseCopyWith<T, BaseResponse<T>> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$BaseResponseCopyWithImpl<T, BaseResponse<T>>(
+          this as BaseResponse<T>, _$identity);
+
+  /// Serializes this BaseResponse to a JSON map.
+  Map<String, dynamic> toJson(Object? Function(T) toJsonT);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is BaseResponse<T> &&
+            const DeepCollectionEquality().equals(other.data, data) &&
+            (identical(other.message, message) || other.message == message) &&
+            (identical(other.meta, meta) || other.meta == meta) &&
+            (identical(other.statusCode, statusCode) ||
+                other.statusCode == statusCode));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(data), message, meta, statusCode);
+
+  @override
+  String toString() {
+    return 'BaseResponse<$T>(data: $data, message: $message, meta: $meta, statusCode: $statusCode)';
+  }
 }
 
 /// @nodoc
-abstract class $BaseResponseCopyWith<T, $Res> {
+abstract mixin class $BaseResponseCopyWith<T, $Res> {
   factory $BaseResponseCopyWith(
-    BaseResponse<T> value,
-    $Res Function(BaseResponse<T>) then,
-  ) = _$BaseResponseCopyWithImpl<T, $Res, BaseResponse<T>>;
+          BaseResponse<T> value, $Res Function(BaseResponse<T>) _then) =
+      _$BaseResponseCopyWithImpl;
   @useResult
-  $Res call({
-    T data,
-    String? message,
-    PaginationMeta? meta,
-    @JsonKey(name: 'status_code') int? statusCode,
-  });
+  $Res call(
+      {T data,
+      String? message,
+      PaginationMeta? meta,
+      @JsonKey(name: 'status_code') int? statusCode});
 
   $PaginationMetaCopyWith<$Res>? get meta;
 }
 
 /// @nodoc
-class _$BaseResponseCopyWithImpl<T, $Res, $Val extends BaseResponse<T>>
+class _$BaseResponseCopyWithImpl<T, $Res>
     implements $BaseResponseCopyWith<T, $Res> {
-  _$BaseResponseCopyWithImpl(this._value, this._then);
+  _$BaseResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final BaseResponse<T> _self;
+  final $Res Function(BaseResponse<T>) _then;
 
   /// Create a copy of BaseResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -335,26 +496,24 @@ class _$BaseResponseCopyWithImpl<T, $Res, $Val extends BaseResponse<T>>
     Object? meta = freezed,
     Object? statusCode = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-        data: freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as T,
-        message: freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        meta: freezed == meta
-            ? _value.meta
-            : meta // ignore: cast_nullable_to_non_nullable
-                as PaginationMeta?,
-        statusCode: freezed == statusCode
-            ? _value.statusCode
-            : statusCode // ignore: cast_nullable_to_non_nullable
-                as int?,
-      ) as $Val,
-    );
+    return _then(_self.copyWith(
+      data: freezed == data
+          ? _self.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+      message: freezed == message
+          ? _self.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      meta: freezed == meta
+          ? _self.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as PaginationMeta?,
+      statusCode: freezed == statusCode
+          ? _self.statusCode
+          : statusCode // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
   }
 
   /// Create a copy of BaseResponse
@@ -362,93 +521,193 @@ class _$BaseResponseCopyWithImpl<T, $Res, $Val extends BaseResponse<T>>
   @override
   @pragma('vm:prefer-inline')
   $PaginationMetaCopyWith<$Res>? get meta {
-    if (_value.meta == null) {
+    if (_self.meta == null) {
       return null;
     }
 
-    return $PaginationMetaCopyWith<$Res>(_value.meta!, (value) {
-      return _then(_value.copyWith(meta: value) as $Val);
+    return $PaginationMetaCopyWith<$Res>(_self.meta!, (value) {
+      return _then(_self.copyWith(meta: value));
     });
   }
 }
 
-/// @nodoc
-abstract class _$$BaseResponseImplCopyWith<T, $Res>
-    implements $BaseResponseCopyWith<T, $Res> {
-  factory _$$BaseResponseImplCopyWith(
-    _$BaseResponseImpl<T> value,
-    $Res Function(_$BaseResponseImpl<T>) then,
-  ) = __$$BaseResponseImplCopyWithImpl<T, $Res>;
-  @override
-  @useResult
-  $Res call({
-    T data,
-    String? message,
-    PaginationMeta? meta,
-    @JsonKey(name: 'status_code') int? statusCode,
-  });
+/// Adds pattern-matching-related methods to [BaseResponse].
+extension BaseResponsePatterns<T> on BaseResponse<T> {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
 
-  @override
-  $PaginationMetaCopyWith<$Res>? get meta;
-}
-
-/// @nodoc
-class __$$BaseResponseImplCopyWithImpl<T, $Res>
-    extends _$BaseResponseCopyWithImpl<T, $Res, _$BaseResponseImpl<T>>
-    implements _$$BaseResponseImplCopyWith<T, $Res> {
-  __$$BaseResponseImplCopyWithImpl(
-    _$BaseResponseImpl<T> _value,
-    $Res Function(_$BaseResponseImpl<T>) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of BaseResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? data = freezed,
-    Object? message = freezed,
-    Object? meta = freezed,
-    Object? statusCode = freezed,
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_BaseResponse<T> value)? $default, {
+    required TResult orElse(),
   }) {
-    return _then(
-      _$BaseResponseImpl<T>(
-        data: freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as T,
-        message: freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        meta: freezed == meta
-            ? _value.meta
-            : meta // ignore: cast_nullable_to_non_nullable
-                as PaginationMeta?,
-        statusCode: freezed == statusCode
-            ? _value.statusCode
-            : statusCode // ignore: cast_nullable_to_non_nullable
-                as int?,
-      ),
-    );
+    final _that = this;
+    switch (_that) {
+      case _BaseResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_BaseResponse<T> value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseResponse():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_BaseResponse<T> value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(T data, String? message, PaginationMeta? meta,
+            @JsonKey(name: 'status_code') int? statusCode)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _BaseResponse() when $default != null:
+        return $default(
+            _that.data, _that.message, _that.meta, _that.statusCode);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(T data, String? message, PaginationMeta? meta,
+            @JsonKey(name: 'status_code') int? statusCode)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseResponse():
+        return $default(
+            _that.data, _that.message, _that.meta, _that.statusCode);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(T data, String? message, PaginationMeta? meta,
+            @JsonKey(name: 'status_code') int? statusCode)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseResponse() when $default != null:
+        return $default(
+            _that.data, _that.message, _that.meta, _that.statusCode);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable(genericArgumentFactories: true)
-class _$BaseResponseImpl<T> implements _BaseResponse<T> {
-  const _$BaseResponseImpl({
-    required this.data,
-    this.message,
-    this.meta,
-    @JsonKey(name: 'status_code') this.statusCode,
-  });
-
-  factory _$BaseResponseImpl.fromJson(
-    Map<String, dynamic> json,
-    T Function(Object?) fromJsonT,
-  ) =>
-      _$$BaseResponseImplFromJson(json, fromJsonT);
+class _BaseResponse<T> implements BaseResponse<T> {
+  const _BaseResponse(
+      {required this.data,
+      this.message,
+      this.meta,
+      @JsonKey(name: 'status_code') this.statusCode});
+  factory _BaseResponse.fromJson(
+          Map<String, dynamic> json, T Function(Object?) fromJsonT) =>
+      _$BaseResponseFromJson(json, fromJsonT);
 
   @override
   final T data;
@@ -460,16 +719,24 @@ class _$BaseResponseImpl<T> implements _BaseResponse<T> {
   @JsonKey(name: 'status_code')
   final int? statusCode;
 
+  /// Create a copy of BaseResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'BaseResponse<$T>(data: $data, message: $message, meta: $meta, statusCode: $statusCode)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$BaseResponseCopyWith<T, _BaseResponse<T>> get copyWith =>
+      __$BaseResponseCopyWithImpl<T, _BaseResponse<T>>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson(Object? Function(T) toJsonT) {
+    return _$BaseResponseToJson<T>(this, toJsonT);
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$BaseResponseImpl<T> &&
+            other is _BaseResponse<T> &&
             const DeepCollectionEquality().equals(other.data, data) &&
             (identical(other.message, message) || other.message == message) &&
             (identical(other.meta, meta) || other.meta == meta) &&
@@ -479,114 +746,150 @@ class _$BaseResponseImpl<T> implements _BaseResponse<T> {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-        runtimeType,
-        const DeepCollectionEquality().hash(data),
-        message,
-        meta,
-        statusCode,
-      );
-
-  /// Create a copy of BaseResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$BaseResponseImplCopyWith<T, _$BaseResponseImpl<T>> get copyWith =>
-      __$$BaseResponseImplCopyWithImpl<T, _$BaseResponseImpl<T>>(
-        this,
-        _$identity,
-      );
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(data), message, meta, statusCode);
 
   @override
-  Map<String, dynamic> toJson(Object? Function(T) toJsonT) {
-    return _$$BaseResponseImplToJson<T>(this, toJsonT);
+  String toString() {
+    return 'BaseResponse<$T>(data: $data, message: $message, meta: $meta, statusCode: $statusCode)';
   }
 }
 
-abstract class _BaseResponse<T> implements BaseResponse<T> {
-  const factory _BaseResponse({
-    required final T data,
-    final String? message,
-    final PaginationMeta? meta,
-    @JsonKey(name: 'status_code') final int? statusCode,
-  }) = _$BaseResponseImpl<T>;
+/// @nodoc
+abstract mixin class _$BaseResponseCopyWith<T, $Res>
+    implements $BaseResponseCopyWith<T, $Res> {
+  factory _$BaseResponseCopyWith(
+          _BaseResponse<T> value, $Res Function(_BaseResponse<T>) _then) =
+      __$BaseResponseCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {T data,
+      String? message,
+      PaginationMeta? meta,
+      @JsonKey(name: 'status_code') int? statusCode});
 
-  factory _BaseResponse.fromJson(
-    Map<String, dynamic> json,
-    T Function(Object?) fromJsonT,
-  ) = _$BaseResponseImpl<T>.fromJson;
+  @override
+  $PaginationMetaCopyWith<$Res>? get meta;
+}
 
-  @override
-  T get data;
-  @override
-  String? get message;
-  @override
-  PaginationMeta? get meta;
-  @override
-  @JsonKey(name: 'status_code')
-  int? get statusCode;
+/// @nodoc
+class __$BaseResponseCopyWithImpl<T, $Res>
+    implements _$BaseResponseCopyWith<T, $Res> {
+  __$BaseResponseCopyWithImpl(this._self, this._then);
+
+  final _BaseResponse<T> _self;
+  final $Res Function(_BaseResponse<T>) _then;
 
   /// Create a copy of BaseResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$BaseResponseImplCopyWith<T, _$BaseResponseImpl<T>> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? data = freezed,
+    Object? message = freezed,
+    Object? meta = freezed,
+    Object? statusCode = freezed,
+  }) {
+    return _then(_BaseResponse<T>(
+      data: freezed == data
+          ? _self.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+      message: freezed == message
+          ? _self.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      meta: freezed == meta
+          ? _self.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as PaginationMeta?,
+      statusCode: freezed == statusCode
+          ? _self.statusCode
+          : statusCode // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
+  }
 
-BaseListResponse<T> _$BaseListResponseFromJson<T>(
-  Map<String, dynamic> json,
-  T Function(Object?) fromJsonT,
-) {
-  return _BaseListResponse<T>.fromJson(json, fromJsonT);
+  /// Create a copy of BaseResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $PaginationMetaCopyWith<$Res>? get meta {
+    if (_self.meta == null) {
+      return null;
+    }
+
+    return $PaginationMetaCopyWith<$Res>(_self.meta!, (value) {
+      return _then(_self.copyWith(meta: value));
+    });
+  }
 }
 
 /// @nodoc
 mixin _$BaseListResponse<T> {
-  List<T> get data => throw _privateConstructorUsedError;
-  String? get message => throw _privateConstructorUsedError;
-  PaginationMeta? get meta => throw _privateConstructorUsedError;
+  List<T> get data;
+  String? get message;
+  PaginationMeta? get meta;
   @JsonKey(name: 'status_code')
-  int? get statusCode => throw _privateConstructorUsedError;
-
-  /// Serializes this BaseListResponse to a JSON map.
-  Map<String, dynamic> toJson(Object? Function(T) toJsonT) =>
-      throw _privateConstructorUsedError;
+  int? get statusCode;
 
   /// Create a copy of BaseListResponse
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $BaseListResponseCopyWith<T, BaseListResponse<T>> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$BaseListResponseCopyWithImpl<T, BaseListResponse<T>>(
+          this as BaseListResponse<T>, _$identity);
+
+  /// Serializes this BaseListResponse to a JSON map.
+  Map<String, dynamic> toJson(Object? Function(T) toJsonT);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is BaseListResponse<T> &&
+            const DeepCollectionEquality().equals(other.data, data) &&
+            (identical(other.message, message) || other.message == message) &&
+            (identical(other.meta, meta) || other.meta == meta) &&
+            (identical(other.statusCode, statusCode) ||
+                other.statusCode == statusCode));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(data), message, meta, statusCode);
+
+  @override
+  String toString() {
+    return 'BaseListResponse<$T>(data: $data, message: $message, meta: $meta, statusCode: $statusCode)';
+  }
 }
 
 /// @nodoc
-abstract class $BaseListResponseCopyWith<T, $Res> {
+abstract mixin class $BaseListResponseCopyWith<T, $Res> {
   factory $BaseListResponseCopyWith(
-    BaseListResponse<T> value,
-    $Res Function(BaseListResponse<T>) then,
-  ) = _$BaseListResponseCopyWithImpl<T, $Res, BaseListResponse<T>>;
+          BaseListResponse<T> value, $Res Function(BaseListResponse<T>) _then) =
+      _$BaseListResponseCopyWithImpl;
   @useResult
-  $Res call({
-    List<T> data,
-    String? message,
-    PaginationMeta? meta,
-    @JsonKey(name: 'status_code') int? statusCode,
-  });
+  $Res call(
+      {List<T> data,
+      String? message,
+      PaginationMeta? meta,
+      @JsonKey(name: 'status_code') int? statusCode});
 
   $PaginationMetaCopyWith<$Res>? get meta;
 }
 
 /// @nodoc
-class _$BaseListResponseCopyWithImpl<T, $Res, $Val extends BaseListResponse<T>>
+class _$BaseListResponseCopyWithImpl<T, $Res>
     implements $BaseListResponseCopyWith<T, $Res> {
-  _$BaseListResponseCopyWithImpl(this._value, this._then);
+  _$BaseListResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final BaseListResponse<T> _self;
+  final $Res Function(BaseListResponse<T>) _then;
 
   /// Create a copy of BaseListResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -598,26 +901,24 @@ class _$BaseListResponseCopyWithImpl<T, $Res, $Val extends BaseListResponse<T>>
     Object? meta = freezed,
     Object? statusCode = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-        data: null == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<T>,
-        message: freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        meta: freezed == meta
-            ? _value.meta
-            : meta // ignore: cast_nullable_to_non_nullable
-                as PaginationMeta?,
-        statusCode: freezed == statusCode
-            ? _value.statusCode
-            : statusCode // ignore: cast_nullable_to_non_nullable
-                as int?,
-      ) as $Val,
-    );
+    return _then(_self.copyWith(
+      data: null == data
+          ? _self.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<T>,
+      message: freezed == message
+          ? _self.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      meta: freezed == meta
+          ? _self.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as PaginationMeta?,
+      statusCode: freezed == statusCode
+          ? _self.statusCode
+          : statusCode // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
   }
 
   /// Create a copy of BaseListResponse
@@ -625,93 +926,194 @@ class _$BaseListResponseCopyWithImpl<T, $Res, $Val extends BaseListResponse<T>>
   @override
   @pragma('vm:prefer-inline')
   $PaginationMetaCopyWith<$Res>? get meta {
-    if (_value.meta == null) {
+    if (_self.meta == null) {
       return null;
     }
 
-    return $PaginationMetaCopyWith<$Res>(_value.meta!, (value) {
-      return _then(_value.copyWith(meta: value) as $Val);
+    return $PaginationMetaCopyWith<$Res>(_self.meta!, (value) {
+      return _then(_self.copyWith(meta: value));
     });
   }
 }
 
-/// @nodoc
-abstract class _$$BaseListResponseImplCopyWith<T, $Res>
-    implements $BaseListResponseCopyWith<T, $Res> {
-  factory _$$BaseListResponseImplCopyWith(
-    _$BaseListResponseImpl<T> value,
-    $Res Function(_$BaseListResponseImpl<T>) then,
-  ) = __$$BaseListResponseImplCopyWithImpl<T, $Res>;
-  @override
-  @useResult
-  $Res call({
-    List<T> data,
-    String? message,
-    PaginationMeta? meta,
-    @JsonKey(name: 'status_code') int? statusCode,
-  });
+/// Adds pattern-matching-related methods to [BaseListResponse].
+extension BaseListResponsePatterns<T> on BaseListResponse<T> {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
 
-  @override
-  $PaginationMetaCopyWith<$Res>? get meta;
-}
-
-/// @nodoc
-class __$$BaseListResponseImplCopyWithImpl<T, $Res>
-    extends _$BaseListResponseCopyWithImpl<T, $Res, _$BaseListResponseImpl<T>>
-    implements _$$BaseListResponseImplCopyWith<T, $Res> {
-  __$$BaseListResponseImplCopyWithImpl(
-    _$BaseListResponseImpl<T> _value,
-    $Res Function(_$BaseListResponseImpl<T>) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of BaseListResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? data = null,
-    Object? message = freezed,
-    Object? meta = freezed,
-    Object? statusCode = freezed,
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_BaseListResponse<T> value)? $default, {
+    required TResult orElse(),
   }) {
-    return _then(
-      _$BaseListResponseImpl<T>(
-        data: null == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<T>,
-        message: freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        meta: freezed == meta
-            ? _value.meta
-            : meta // ignore: cast_nullable_to_non_nullable
-                as PaginationMeta?,
-        statusCode: freezed == statusCode
-            ? _value.statusCode
-            : statusCode // ignore: cast_nullable_to_non_nullable
-                as int?,
-      ),
-    );
+    final _that = this;
+    switch (_that) {
+      case _BaseListResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_BaseListResponse<T> value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseListResponse():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_BaseListResponse<T> value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseListResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(List<T> data, String? message, PaginationMeta? meta,
+            @JsonKey(name: 'status_code') int? statusCode)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _BaseListResponse() when $default != null:
+        return $default(
+            _that.data, _that.message, _that.meta, _that.statusCode);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(List<T> data, String? message, PaginationMeta? meta,
+            @JsonKey(name: 'status_code') int? statusCode)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseListResponse():
+        return $default(
+            _that.data, _that.message, _that.meta, _that.statusCode);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(List<T> data, String? message, PaginationMeta? meta,
+            @JsonKey(name: 'status_code') int? statusCode)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _BaseListResponse() when $default != null:
+        return $default(
+            _that.data, _that.message, _that.meta, _that.statusCode);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable(genericArgumentFactories: true)
-class _$BaseListResponseImpl<T> implements _BaseListResponse<T> {
-  const _$BaseListResponseImpl({
-    required final List<T> data,
-    this.message,
-    this.meta,
-    @JsonKey(name: 'status_code') this.statusCode,
-  }) : _data = data;
-
-  factory _$BaseListResponseImpl.fromJson(
-    Map<String, dynamic> json,
-    T Function(Object?) fromJsonT,
-  ) =>
-      _$$BaseListResponseImplFromJson(json, fromJsonT);
+class _BaseListResponse<T> implements BaseListResponse<T> {
+  const _BaseListResponse(
+      {required final List<T> data,
+      this.message,
+      this.meta,
+      @JsonKey(name: 'status_code') this.statusCode})
+      : _data = data;
+  factory _BaseListResponse.fromJson(
+          Map<String, dynamic> json, T Function(Object?) fromJsonT) =>
+      _$BaseListResponseFromJson(json, fromJsonT);
 
   final List<T> _data;
   @override
@@ -729,16 +1131,25 @@ class _$BaseListResponseImpl<T> implements _BaseListResponse<T> {
   @JsonKey(name: 'status_code')
   final int? statusCode;
 
+  /// Create a copy of BaseListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'BaseListResponse<$T>(data: $data, message: $message, meta: $meta, statusCode: $statusCode)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$BaseListResponseCopyWith<T, _BaseListResponse<T>> get copyWith =>
+      __$BaseListResponseCopyWithImpl<T, _BaseListResponse<T>>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson(Object? Function(T) toJsonT) {
+    return _$BaseListResponseToJson<T>(this, toJsonT);
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$BaseListResponseImpl<T> &&
+            other is _BaseListResponse<T> &&
             const DeepCollectionEquality().equals(other._data, _data) &&
             (identical(other.message, message) || other.message == message) &&
             (identical(other.meta, meta) || other.meta == meta) &&
@@ -748,58 +1159,84 @@ class _$BaseListResponseImpl<T> implements _BaseListResponse<T> {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-        runtimeType,
-        const DeepCollectionEquality().hash(_data),
-        message,
-        meta,
-        statusCode,
-      );
-
-  /// Create a copy of BaseListResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$BaseListResponseImplCopyWith<T, _$BaseListResponseImpl<T>> get copyWith =>
-      __$$BaseListResponseImplCopyWithImpl<T, _$BaseListResponseImpl<T>>(
-        this,
-        _$identity,
-      );
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_data), message, meta, statusCode);
 
   @override
-  Map<String, dynamic> toJson(Object? Function(T) toJsonT) {
-    return _$$BaseListResponseImplToJson<T>(this, toJsonT);
+  String toString() {
+    return 'BaseListResponse<$T>(data: $data, message: $message, meta: $meta, statusCode: $statusCode)';
   }
 }
 
-abstract class _BaseListResponse<T> implements BaseListResponse<T> {
-  const factory _BaseListResponse({
-    required final List<T> data,
-    final String? message,
-    final PaginationMeta? meta,
-    @JsonKey(name: 'status_code') final int? statusCode,
-  }) = _$BaseListResponseImpl<T>;
+/// @nodoc
+abstract mixin class _$BaseListResponseCopyWith<T, $Res>
+    implements $BaseListResponseCopyWith<T, $Res> {
+  factory _$BaseListResponseCopyWith(_BaseListResponse<T> value,
+          $Res Function(_BaseListResponse<T>) _then) =
+      __$BaseListResponseCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {List<T> data,
+      String? message,
+      PaginationMeta? meta,
+      @JsonKey(name: 'status_code') int? statusCode});
 
-  factory _BaseListResponse.fromJson(
-    Map<String, dynamic> json,
-    T Function(Object?) fromJsonT,
-  ) = _$BaseListResponseImpl<T>.fromJson;
+  @override
+  $PaginationMetaCopyWith<$Res>? get meta;
+}
 
-  @override
-  List<T> get data;
-  @override
-  String? get message;
-  @override
-  PaginationMeta? get meta;
-  @override
-  @JsonKey(name: 'status_code')
-  int? get statusCode;
+/// @nodoc
+class __$BaseListResponseCopyWithImpl<T, $Res>
+    implements _$BaseListResponseCopyWith<T, $Res> {
+  __$BaseListResponseCopyWithImpl(this._self, this._then);
+
+  final _BaseListResponse<T> _self;
+  final $Res Function(_BaseListResponse<T>) _then;
 
   /// Create a copy of BaseListResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$BaseListResponseImplCopyWith<T, _$BaseListResponseImpl<T>> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? data = null,
+    Object? message = freezed,
+    Object? meta = freezed,
+    Object? statusCode = freezed,
+  }) {
+    return _then(_BaseListResponse<T>(
+      data: null == data
+          ? _self._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<T>,
+      message: freezed == message
+          ? _self.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      meta: freezed == meta
+          ? _self.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as PaginationMeta?,
+      statusCode: freezed == statusCode
+          ? _self.statusCode
+          : statusCode // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
+  }
+
+  /// Create a copy of BaseListResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $PaginationMetaCopyWith<$Res>? get meta {
+    if (_self.meta == null) {
+      return null;
+    }
+
+    return $PaginationMetaCopyWith<$Res>(_self.meta!, (value) {
+      return _then(_self.copyWith(meta: value));
+    });
+  }
 }
+
+// dart format on

@@ -6,8 +6,8 @@ part of 'base_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$PaginationMetaImpl _$$PaginationMetaImplFromJson(Map<String, dynamic> json) =>
-    _$PaginationMetaImpl(
+_PaginationMeta _$PaginationMetaFromJson(Map<String, dynamic> json) =>
+    _PaginationMeta(
       currentPage: (json['current_page'] as num?)?.toInt(),
       lastPage: (json['last_page'] as num?)?.toInt(),
       perPage: (json['per_page'] as num?)?.toInt(),
@@ -15,9 +15,7 @@ _$PaginationMetaImpl _$$PaginationMetaImplFromJson(Map<String, dynamic> json) =>
       path: json['path'] as String?,
     );
 
-Map<String, dynamic> _$$PaginationMetaImplToJson(
-  _$PaginationMetaImpl instance,
-) =>
+Map<String, dynamic> _$PaginationMetaToJson(_PaginationMeta instance) =>
     <String, dynamic>{
       'current_page': instance.currentPage,
       'last_page': instance.lastPage,
@@ -26,11 +24,11 @@ Map<String, dynamic> _$$PaginationMetaImplToJson(
       'path': instance.path,
     };
 
-_$BaseResponseImpl<T> _$$BaseResponseImplFromJson<T>(
+_BaseResponse<T> _$BaseResponseFromJson<T>(
   Map<String, dynamic> json,
   T Function(Object? json) fromJsonT,
 ) =>
-    _$BaseResponseImpl<T>(
+    _BaseResponse<T>(
       data: fromJsonT(json['data']),
       message: json['message'] as String?,
       meta: json['meta'] == null
@@ -39,8 +37,8 @@ _$BaseResponseImpl<T> _$$BaseResponseImplFromJson<T>(
       statusCode: (json['status_code'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$BaseResponseImplToJson<T>(
-  _$BaseResponseImpl<T> instance,
+Map<String, dynamic> _$BaseResponseToJson<T>(
+  _BaseResponse<T> instance,
   Object? Function(T value) toJsonT,
 ) =>
     <String, dynamic>{
@@ -50,11 +48,11 @@ Map<String, dynamic> _$$BaseResponseImplToJson<T>(
       'status_code': instance.statusCode,
     };
 
-_$BaseListResponseImpl<T> _$$BaseListResponseImplFromJson<T>(
+_BaseListResponse<T> _$BaseListResponseFromJson<T>(
   Map<String, dynamic> json,
   T Function(Object? json) fromJsonT,
 ) =>
-    _$BaseListResponseImpl<T>(
+    _BaseListResponse<T>(
       data: (json['data'] as List<dynamic>).map(fromJsonT).toList(),
       message: json['message'] as String?,
       meta: json['meta'] == null
@@ -63,8 +61,8 @@ _$BaseListResponseImpl<T> _$$BaseListResponseImplFromJson<T>(
       statusCode: (json['status_code'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$$BaseListResponseImplToJson<T>(
-  _$BaseListResponseImpl<T> instance,
+Map<String, dynamic> _$BaseListResponseToJson<T>(
+  _BaseListResponse<T> instance,
   Object? Function(T value) toJsonT,
 ) =>
     <String, dynamic>{
